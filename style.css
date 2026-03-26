@@ -1,0 +1,79 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+}
+
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.profile-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  border: 1px solid #d1d5db;
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

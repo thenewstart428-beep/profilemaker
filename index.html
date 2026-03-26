@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfileHub - Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">ProfileHub</h1>
+    <a href="settings.html" class="nav-link">Settings</a>
+  </nav>
+
+  <main class="container">
+
+    <h2>Your Profile</h2>
+
+    <div class="profile-card">
+
+      <img id="avatar-preview" class="avatar" src="default-avatar.png" alt="Avatar">
+
+      <label>
+        Change Avatar
+        <input type="file" id="avatar-input" accept="image/*">
+      </label>
+
+      <label>
+        Full Name
+        <input type="text" id="profile-name">
+      </label>
+
+      <label>
+        Bio
+        <textarea id="profile-bio"></textarea>
+      </label>
+
+      <label class="toggle-row">
+        <span>Seller Mode</span>
+        <input type="checkbox" id="seller-toggle">
+      </label>
+
+      <button onclick="saveProfile()">Save Profile</button>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
